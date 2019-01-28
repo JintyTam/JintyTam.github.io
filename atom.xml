@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>此心有疾</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-01-28T08:12:39.265Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Tam</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/01/28/hello-world/"/>
+    <id>http://yoursite.com/2019/01/28/hello-world/</id>
+    <published>2019-01-28T08:12:39.265Z</published>
+    <updated>2019-01-28T08:12:39.265Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="旅游图赏" scheme="http://yoursite.com/categories/%E6%97%85%E6%B8%B8%E5%9B%BE%E8%B5%8F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>第一篇博客</title>
+    <link href="http://yoursite.com/2019/01/28/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2019/01/28/第一篇博客/</id>
+    <published>2019-01-28T02:25:09.000Z</published>
+    <updated>2019-01-28T02:41:03.852Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="测试" scheme="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="test" scheme="http://yoursite.com/tags/test/"/>
+    
+  </entry>
+  
+</feed>
