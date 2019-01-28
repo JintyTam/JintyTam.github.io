@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-28T08:12:39.265Z</updated>
+  <updated>2019-01-28T09:37:46.808Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,30 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/01/28/hello-world/"/>
-    <id>http://yoursite.com/2019/01/28/hello-world/</id>
-    <published>2019-01-28T08:12:39.265Z</published>
-    <updated>2019-01-28T08:12:39.265Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="旅游图赏" scheme="http://yoursite.com/categories/%E6%97%85%E6%B8%B8%E5%9B%BE%E8%B5%8F/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>2019-01-28 创建主站</title>
