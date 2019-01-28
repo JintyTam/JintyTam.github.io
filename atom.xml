@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-28T09:37:46.808Z</updated>
+  <updated>2019-01-28T10:25:35.662Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/01/28/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2019/01/28/第一篇博客/</id>
     <published>2019-01-28T02:25:09.000Z</published>
-    <updated>2019-01-28T09:37:46.808Z</updated>
+    <updated>2019-01-28T10:25:35.662Z</updated>
     
     <summary type="html">
     
@@ -43,6 +43,8 @@
       
     
     </summary>
+    
+      <category term="随手记" scheme="http://yoursite.com/categories/%E9%9A%8F%E6%89%8B%E8%AE%B0/"/>
     
     
   </entry>
