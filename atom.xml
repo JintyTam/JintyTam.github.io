@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-28T15:22:15.297Z</updated>
+  <updated>2019-01-29T03:56:12.685Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Windows和MacOS 蓝牙4.0以上鼠标共享</title>
+    <link href="http://yoursite.com/2019/01/29/Windows%E5%92%8CMacOS-%E8%93%9D%E7%89%994-0%E4%BB%A5%E4%B8%8A%E9%BC%A0%E6%A0%87%E5%85%B1%E4%BA%AB/"/>
+    <id>http://yoursite.com/2019/01/29/Windows和MacOS-蓝牙4-0以上鼠标共享/</id>
+    <published>2019-01-29T03:41:09.000Z</published>
+    <updated>2019-01-29T03:56:12.685Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;MacOS下的操作&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;关闭蓝牙，打开终端，删除MacOS的蓝牙信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="ji&#39;s技术教程hu&#39;jiao&#39;ch" scheme="http://yoursite.com/categories/ji-s%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8Bhu-jiao-ch/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-28 创建主站</title>
     <link href="http://yoursite.com/2019/01/28/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2019/01/28/第一篇博客/</id>
     <published>2019-01-28T02:25:09.000Z</published>
-    <updated>2019-01-28T15:22:15.297Z</updated>
+    <updated>2019-01-29T03:42:44.468Z</updated>
     
     <summary type="html">
     
@@ -30,7 +59,7 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;强大的markdown编辑器&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;简洁的主题&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;简洁的主题&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
     
     </summary>
     

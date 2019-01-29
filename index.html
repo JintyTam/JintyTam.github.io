@@ -350,6 +350,225 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/29/Windows和MacOS-蓝牙4-0以上鼠标共享/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tam">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="此心有疾">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/29/Windows和MacOS-蓝牙4-0以上鼠标共享/" class="post-title-link" itemprop="url">Windows和MacOS 蓝牙4.0以上鼠标共享</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-29 11:41:09 / 修改时间：11:56:12" itemprop="dateCreated datePublished" datetime="2019-01-29T11:41:09+08:00">2019-01-29</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/ji-s技术教程hu-jiao-ch/" itemprop="url" rel="index"><span itemprop="name">ji's技术教程hu'jiao'ch</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li><p>MacOS下的操作</p>
+<ul>
+<li>关闭蓝牙，打开终端，删除MacOS的蓝牙信息</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo rm /private/var/root/Library/Preferences/com.apple.bluetoothd.plist</span><br><span class="line">sudo rm /Library/Preferences/com.apple.Bluetooth.plist</span><br></pre></td></tr></table></figure>
+<ul>
+<li>进行蓝牙鼠标配对，如果蓝牙里面还存在蓝牙设备信息，请手动删除再进行配对连接</li>
+<li>连接成功后，进行蓝牙信息导出到桌面：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo cp /private/var/root/Library/Preferences/com.apple.bluetoothd.plist ~/Desktop</span><br><span class="line">sudo cp /Library/Preferences/com.apple.Bluetooth.plist ~/Desktop/</span><br></pre></td></tr></table></figure>
+<ul>
+<li>用PlistEdit Pro工具打开com.apple.bluetoothd.plist可以看到蓝牙信息<ul>
+<li>此时蓝牙的物理地址是：D4D365F79AF3</li>
+<li><img src="/2019/01/29/Windows和MacOS-蓝牙4-0以上鼠标共享/201901220201312363349.png" alt="查看蓝牙地址"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>Windows下的 操作</p>
+<ul>
+<li><p>删除所有已配对的蓝牙设备，进行蓝牙鼠标配对</p>
+</li>
+<li><p>下载PTStool工具，打开Powershell，cd命令进入PTStool工具，然后使用以下命令进入注册表</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.\psexec.exe -s -i \\127.0.0.1 regedit</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>进入HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHPORT\Parameters\Keys{电脑的蓝牙物理地址}{鼠标的蓝牙物理地址} ，右击导出到reg文件</p>
+</li>
+<li><p>右击导出的reg文件-&gt;编辑-&gt;复制所有数据到一个txt文档，并保存到U盘上，稍后MacOS会用到</p>
+</li>
+</ul>
+</li>
+<li><p>重启进入MacOS</p>
+<ul>
+<li><p>查看保存的txt文件，可以看到蓝牙鼠标物理地址已经发生改变</p>
+<p><img src="/2019/01/29/Windows和MacOS-蓝牙4-0以上鼠标共享/201901220222021621415.png" alt=""></p>
+</li>
+<li><p>用PlistEdit Pro工具打开com.apple.bluetoothd.plist，由于权限问题，建议先保存一份副本，再进行编辑替换</p>
+<p><img src="/2019/01/29/Windows和MacOS-蓝牙4-0以上鼠标共享/201901220223361682022.png" alt=""></p>
+</li>
+<li><p>然后保存com.apple.bluetoothd.plist，打开com.apple.Bluetooth.plis，并找到所有蓝牙鼠标的物理地址，修改成新的物理地址，修改后保存</p>
+</li>
+<li><p>关闭蓝牙，复制修改好的文件到系统里：</p>
+</li>
+<li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo cp ~/Desktop/com.apple.bluetoothd.plist /private/var/root/Library/Preferences/com.apple.bluetoothd.plist</span><br><span class="line">sudo cp ~/Desktop/com.apple.Bluetooth.plist /Library/Preferences/com.apple.Bluetooth.plist</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>进行修改权限和用户组</p>
+</li>
+<li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod -R 600 /private/var/root/Library/Preferences/com.apple.bluetoothd.plist</span><br><span class="line">sudo chmod -R 600 /Library/Preferences/com.apple.Bluetooth.plist</span><br><span class="line">sudo chown root:wheel /private/var/root/Library/Preferences/com.apple.bluetoothd.plist</span><br><span class="line">sudo chown root:wheel /Library/Preferences/com.apple.Bluetooth.plist</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>重启电脑到Windows系统，查看鼠标是否正常连接</li>
+<li>再重启MacOS，打开蓝牙，此时蓝牙鼠标会自动连接</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/28/第一篇博客/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -395,12 +614,24 @@
                 
               
 
-              <time title="创建时间：2019-01-28 10:25:09 / 修改时间：23:22:15" itemprop="dateCreated datePublished" datetime="2019-01-28T10:25:09+08:00">2019-01-28</time>
+              <time title="创建时间：2019-01-28 10:25:09" itemprop="dateCreated datePublished" datetime="2019-01-28T10:25:09+08:00">2019-01-28</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-01-29 11:42:44" itemprop="dateModified" datetime="2019-01-29T11:42:44+08:00">2019-01-29</time>
               
             
           </span>
@@ -458,7 +689,7 @@
 </li>
 <li><p>强大的markdown编辑器</p>
 </li>
-<li><p>简洁的主题</p>
+<li><p>简洁的主题</p></li></ol>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -470,7 +701,7 @@
           <!--/noindex-->
         
       
-    </li></ol></div>
+    </div>
 
     
 
@@ -550,7 +781,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -565,7 +796,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>

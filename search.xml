@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Windows和MacOS 蓝牙4.0以上鼠标共享]]></title>
+    <url>%2F2019%2F01%2F29%2FWindows%E5%92%8CMacOS-%E8%93%9D%E7%89%994-0%E4%BB%A5%E4%B8%8A%E9%BC%A0%E6%A0%87%E5%85%B1%E4%BA%AB%2F</url>
+    <content type="text"><![CDATA[MacOS下的操作 关闭蓝牙，打开终端，删除MacOS的蓝牙信息 12sudo rm /private/var/root/Library/Preferences/com.apple.bluetoothd.plistsudo rm /Library/Preferences/com.apple.Bluetooth.plist 进行蓝牙鼠标配对，如果蓝牙里面还存在蓝牙设备信息，请手动删除再进行配对连接 连接成功后，进行蓝牙信息导出到桌面： 12sudo cp /private/var/root/Library/Preferences/com.apple.bluetoothd.plist ~/Desktopsudo cp /Library/Preferences/com.apple.Bluetooth.plist ~/Desktop/ 用PlistEdit Pro工具打开com.apple.bluetoothd.plist可以看到蓝牙信息 此时蓝牙的物理地址是：D4D365F79AF3 Windows下的 操作 删除所有已配对的蓝牙设备，进行蓝牙鼠标配对 下载PTStool工具，打开Powershell，cd命令进入PTStool工具，然后使用以下命令进入注册表 1.\psexec.exe -s -i \\127.0.0.1 regedit 进入HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTHPORT\Parameters\Keys{电脑的蓝牙物理地址}{鼠标的蓝牙物理地址} ，右击导出到reg文件 右击导出的reg文件-&gt;编辑-&gt;复制所有数据到一个txt文档，并保存到U盘上，稍后MacOS会用到 重启进入MacOS 查看保存的txt文件，可以看到蓝牙鼠标物理地址已经发生改变 用PlistEdit Pro工具打开com.apple.bluetoothd.plist，由于权限问题，建议先保存一份副本，再进行编辑替换 然后保存com.apple.bluetoothd.plist，打开com.apple.Bluetooth.plis，并找到所有蓝牙鼠标的物理地址，修改成新的物理地址，修改后保存 关闭蓝牙，复制修改好的文件到系统里： 12sudo cp ~/Desktop/com.apple.bluetoothd.plist /private/var/root/Library/Preferences/com.apple.bluetoothd.plistsudo cp ~/Desktop/com.apple.Bluetooth.plist /Library/Preferences/com.apple.Bluetooth.plist 进行修改权限和用户组 1234sudo chmod -R 600 /private/var/root/Library/Preferences/com.apple.bluetoothd.plistsudo chmod -R 600 /Library/Preferences/com.apple.Bluetooth.plistsudo chown root:wheel /private/var/root/Library/Preferences/com.apple.bluetoothd.plistsudo chown root:wheel /Library/Preferences/com.apple.Bluetooth.plist 重启电脑到Windows系统，查看鼠标是否正常连接 再重启MacOS，打开蓝牙，此时蓝牙鼠标会自动连接]]></content>
+      <categories>
+        <category>ji&#39;s技术教程hu&#39;jiao&#39;ch</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[2019-01-28 创建主站]]></title>
     <url>%2F2019%2F01%2F28%2F%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%2F</url>
-    <content type="text"><![CDATA[静态网站 强大的markdown编辑器 简洁的主题 这是引用：无言胜有言 引用子列表 床前明月光 无序列表 二级无序列表 N级子列表 加粗一下字体 再来个斜体字 斜体加粗 这是分割线 再来个超链接，点击链接到我的个人主站 下面有一个表格 无序列表 引用 分割线 超链接 有序列表 * &gt; — [name] ( 链接 ) 1. +、- &gt;&gt; ** none 2. echo &#39;这是单行代码&#39;; 123456(```) function fun()&#123; echo &quot;这是多行代码&quot;; &#125; fun();(```)]]></content>
+    <content type="text"><![CDATA[静态网站 强大的markdown编辑器 简洁的主题 这是引用：无言胜有言 引用子列表 床前明月光 无序列表 二级无序列表 N级子列表 加粗一下字体 再来个斜体字 斜体加粗 这是分割线 再来个超链接，点击链接到我的个人主站 下面有一个表格 无序列表 引用 分割线 超链接 有序列表 * &gt; — [name] ( 链接 ) 1. +、- &gt;&gt; ** none 2. echo &#39;这是单行代码&#39;; 123456(```) function fun()&#123; echo &quot;这是多行代码&quot;; &#125; fun();(```) 插入本地图片]]></content>
       <categories>
         <category>随手记</category>
       </categories>
