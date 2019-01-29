@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[2019-01-28 创建主站]]></title>
     <url>%2F2019%2F01%2F28%2F%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%2F</url>
-    <content type="text"><![CDATA[静态的网站 强大的markdown编辑器 简洁的主题 This is my first posts;]]></content>
+    <content type="text"><![CDATA[静态网站 强大的markdown编辑器 简洁的主题 这是引用：无言胜有言 引用子列表 床前明月光 无序列表 二级无序列表 N级子列表 加粗一下字体 再来个斜体字 斜体加粗 这是分割线 再来个超链接，点击链接到我的个人主站 下面有一个表格 无序列表 引用 分割线 超链接 有序列表 * &gt; — [name] ( 链接 ) 1. +、- &gt;&gt; ** none 2. echo &#39;这是单行代码&#39;; 123456(```) function fun()&#123; echo &quot;这是多行代码&quot;; &#125; fun();(```)]]></content>
       <categories>
         <category>随手记</category>
       </categories>
