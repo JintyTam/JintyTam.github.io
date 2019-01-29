@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-29T04:30:01.030Z</updated>
+  <updated>2019-01-29T06:01:28.276Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac下hexo+github搭建个人博客</title>
+    <link href="http://yoursite.com/2019/01/29/Mac%E4%B8%8Bhexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2019/01/29/Mac下hexo-github搭建个人博客/</id>
+    <published>2019-01-29T05:05:41.000Z</published>
+    <updated>2019-01-29T06:01:28.276Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;h5 id=&quot;安装Node-js&quot;&gt;&lt;a href=&quot;#安装Node-js&quot; class=&quot;headerlink&quot; title=&quot;安装Node.js&quot;&gt;&lt;/a&gt;安装&lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Node.js&lt;/a&gt;&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;官网下载Node.js，打开文件安装&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h5 id=&quot;安装Xcode&quot;&gt;&lt;a href=&quot;#安装Xcode&quot; class=&quot;headerlink&quot; title=&quot;安装Xcode&quot;&gt;&lt;/a&gt;安装Xcode&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;在苹果商店搜索安装&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h5 id=&quot;配置github&quot;&gt;&lt;a href=&quot;#配置github&quot; class=&quot;headerlink&quot; title=&quot;配置github&quot;&gt;&lt;/a&gt;配置github&lt;/h5&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;新建github账号&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;创建仓库，注意仓库命名格式为：username.github.io，username要与用户名一致&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2019/01/29/Mac下hexo-github搭建个人博客/QQ20190129-132053@2x.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>Windows和MacOS 蓝牙4.0以上鼠标共享</title>
