@@ -14,6 +14,53 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Cron定时任务]]></title>
+    <url>%2F2018%2F05%2F23%2FCron%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%2F</url>
+    <content type="text"><![CDATA[cron定时任务常用命令： 123/etc/init.d/cron start #开启cron/etc/init.d/cron stop #停止cron/etc/init.d/cron restart #重启cron 配置cron定时任务 1crontab -e 首次配置会询问用哪种编辑器，默认nano 基本格式 : 1* * * * * command *分别为：分 时 日 月 周，command是要执行的命令。 123456789101112分：0~59时：0~23日：1~31月：1~12周：0～6（0表示星期天）配置文件的一些例子：0 3 * * * 每天凌晨3点执行* 23-7/1 * * * 晚上11点到早上7点之间，每隔一小时执行*/30 * * * * 每半小时执行0 00 * * 0 每星期天的凌晨执行*/1 表示每一 分/时/日/月/周 配置完需要重启cron才能生效]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>树莓派</tag>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[树莓派40pin引脚图]]></title>
+    <url>%2F2018%2F05%2F23%2F%E6%A0%91%E8%8E%93%E6%B4%BE40pin%E5%BC%95%E8%84%9A%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[仅供参考]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>树莓派</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[html+php+axjx 局部定时刷新]]></title>
+    <url>%2F2018%2F05%2F21%2Fhtml-php-axjx-%E5%B1%80%E9%83%A8%E5%AE%9A%E6%97%B6%E5%88%B7%E6%96%B0%2F</url>
+    <content type="text"><![CDATA[html代码：12345678910&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;!-- 引入jquery，js文件请到jquery官网下载--&gt;&lt;script src = "/script/jquery-3.3.1.min.js" type="text/javascript"&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;div id = "refresh"&gt;&lt;/div&gt; &lt;!-- 给div设置id值--&gt;&lt;/body&gt;&lt;/html&gt; jQurey axjx部分，用来传输数据并定时刷新指定div。 放在html底部或新建js文件并引入： 1234567891011121314151617181920212223&lt;script&gt; setInterval(function()&#123; jQuery.ajax(&#123; type:"POST", //数据提交方式 url:"axjxcheck.php", //提交地址，需要与下面php部分的文件名一致 global:false, //是否全局 dataType:"json", //回调函数接收数据的数据格式 data:"requset=ajax", //提交到php的数据 success:function(msg)&#123; $('#refresh').empty(); //清空id值为refresh的div里面的所有内容 var data=''; if(msg!='')&#123; data = eval("("+msg+")"); //将返回的json数据进行解析，并赋给data &#125; $('#refresh').html(data); //在#refresh中输出 &#125;, error:function() &#123; alert("请求错误"); &#125; &#125;) &#125;, 2000);//每2秒触发一次&lt;/script&gt; PHP部分，php文件名需要与script请求地址一致：123456if($_POST['request']=='ajax') //接收axjx提交的数据并判断数据是否正确&#123; $data="123456789"; echo json_encode($data); //返回json数据 exit;&#125;]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+        <tag>axjx</tag>
+        <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[树莓派折腾笔记]]></title>
+    <url>%2F2018%2F05%2F20%2F%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[树莓派 3B+ WiFi设置： 编辑vi /etc/wpa_supplicant/wpa_supplicant.conf文件，在最后面加入： 1234network=&#123;ssid="" #wifi名称psk="" #WiFi密码&#125; ssh-key 公钥存放位置1vi .ssh/authorized_keys 查杀进程123查看进程 ps -aux|grep 进程名称查看端口 netstat -nap|grep 进程ID结束进程 kill -9 进程ID 树莓派之mysql： 首先保证： 1sudo mysql -u root -p #不使用密码或者随便输入密码都能登录 查询plugin的加密方式（默认为：unix_socket）： 1select Host,User,plugin from mysql.user where User='root'; 更改加密方式： 123&gt;&gt; update mysql.user set plugin='mysql_native_password'; #重置加密方式&gt;&gt;GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'newpassword' WITH GRANT OPTION; #设置新密码,newpassword填写密码 &gt;&gt; flush privileges; #刷新权限信息 然后就可以正常使用了]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>树莓派</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2018-05-18 创建主站]]></title>
     <url>%2F2018%2F05%2F18%2F%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%2F</url>
     <content type="text"><![CDATA[静态网站 强大的markdown编辑器 简洁的主题 这是引用：无言胜有言 引用子列表 床前明月光 无序列表 二级无序列表 N级子列表 加粗一下字体 再来个斜体字 斜体加粗 这是分割线 再来个超链接，点击链接到我的个人主站 下面有一个表格 无序列表 引用 分割线 超链接 有序列表 * &gt; — [name] ( 链接 ) 1. +、- &gt;&gt; ** none 2. echo &#39;这是单行代码&#39;; 123456(```) function fun()&#123; echo &quot;这是多行代码&quot;; &#125; fun();(```) 插入本地图片 ![图片描述](相对或绝对路径)]]></content>
