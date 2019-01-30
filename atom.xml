@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-29T06:03:02.300Z</updated>
+  <updated>2019-01-30T05:01:40.599Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="http://yoursite.com/2019/01/29/Mac%E4%B8%8Bhexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2019/01/29/Mac下hexo-github搭建个人博客/</id>
     <published>2019-01-29T05:05:41.000Z</published>
-    <updated>2019-01-29T06:03:02.300Z</updated>
+    <updated>2019-01-30T05:01:40.599Z</updated>
     
     <summary type="html">
     
       &lt;ol&gt;
-&lt;li&gt;&lt;h5 id=&quot;安装Node-js&quot;&gt;&lt;a href=&quot;#安装Node-js&quot; class=&quot;headerlink&quot; title=&quot;安装Node.js&quot;&gt;&lt;/a&gt;安装&lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Node.js&lt;/a&gt;&lt;/h5&gt;&lt;ul&gt;
-&lt;li&gt;官网下载Node.js，打开文件安装&lt;/li&gt;
+&lt;li&gt;&lt;h5 id=&quot;安装Node-js&quot;&gt;&lt;a href=&quot;#安装Node-js&quot; class=&quot;headerlink&quot; title=&quot;安装Node.js&quot;&gt;&lt;/a&gt;安装Node.js&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;官网下载&lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Node.js&lt;/a&gt;，打开文件安装&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;h5 id=&quot;安装Xcode&quot;&gt;&lt;a href=&quot;#安装Xcode&quot; class=&quot;headerlink&quot; title=&quot;安装Xcode&quot;&gt;&lt;/a&gt;安装Xcode&lt;/h5&gt;&lt;ul&gt;
