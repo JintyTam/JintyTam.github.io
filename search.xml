@@ -14,9 +14,17 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>%2F2019%2F01%2F29%2FWindows%E5%92%8CMacOS-%E8%93%9D%E7%89%994-0%E4%BB%A5%E4%B8%8A%E9%BC%A0%E6%A0%87%E5%85%B1%E4%BA%AB%2F</url>
-    <content type="text"><![CDATA[title: Windows和MacOS 蓝牙4.0以上鼠标共享date: 2019-01-22 11:41:09categories: 学习笔记tags: Mac 黑苹果 蓝牙鼠标 MacOS下的操作 关闭蓝牙，打开终端，删除MacOS的蓝牙信息 12sudo rm /private/var/root/Library/Preferences/com.apple.bluetoothd.plistsudo rm /Library/Preferences/com.apple.Bluetooth.plist 进行蓝牙鼠标配对，如果蓝牙里面还存在蓝牙设备信息，请手动删除再进行配对连接 连接成功后，进行蓝牙信息导出到桌面： 12sudo cp /private/var/root/Library/Preferences/com.apple.bluetoothd.plist ~/Desktopsudo cp /Library/Preferences/com.apple.Bluetooth.plist ~/Desktop/ 查看当前用户名，用于修改文件属性 1whoami 修改文件所属用户组，否则无法编辑 12sudo chown -R 用户名 com.apple.Bluetooth.plistsudo chown -R 用户名 com.apple.bluetoothd.plist 用PlistEdit Pro工具打开com.apple.bluetoothd.plist可以看到蓝牙信息 此时蓝牙的mac地址是：D4D365F79AF3 Windows下的 操作 删除所有已配对的蓝牙设备，进行蓝牙鼠标配对 下载PTStool工具，打开Powershell，cd命令进入PTStool工具，然后使用以下命令进入注册表 1.\psexec.exe -s -i \\127.0.0.1 regedit 进入： HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\Services\BTHPORT\Parameters\Keys\{电脑的蓝牙mac地址}\{鼠标的蓝牙mac地址} 右击导出到reg文件 右击导出的reg文件-&gt;编辑-&gt;复制所有数据到一个txt文档，并保存到U盘上，稍后MacOS会用到 重启进入MacOS 查看保存的txt文件，可以看到蓝牙鼠标mac地址已经发生改变 用PlistEdit Pro工具打开com.apple.bluetoothd.plist 按照图片替换数据，然后保存com.apple.bluetoothd.plist 打开com.apple.Bluetooth.plis，使用查找功能找到所有蓝牙鼠标的mac地址，修改成新的蓝牙mac地址，修改后保存 关闭蓝牙，复制修改好的文件到系统里： 12sudo cp ~/Desktop/com.apple.bluetoothd.plist /private/var/root/Library/Preferences/com.apple.bluetoothd.plistsudo cp ~/Desktop/com.apple.Bluetooth.plist /Library/Preferences/com.apple.Bluetooth.plist 进行修改权限和用户组 1234sudo chmod -R 600 /private/var/root/Library/Preferences/com.apple.bluetoothd.plistsudo chmod -R 600 /Library/Preferences/com.apple.Bluetooth.plistsudo chown root:wheel /private/var/root/Library/Preferences/com.apple.bluetoothd.plistsudo chown root:wheel /Library/Preferences/com.apple.Bluetooth.plist 重启电脑到Windows系统，查看鼠标是否正常连接 再重启MacOS，打开蓝牙，此时蓝牙鼠标会自动连接]]></content>
+    <title><![CDATA[Windows和MacOS 蓝牙4.0以上鼠标共享]]></title>
+    <url>%2F2019%2F01%2F22%2FWindows%E5%92%8CMacOS-%E8%93%9D%E7%89%994-0%E4%BB%A5%E4%B8%8A%E9%BC%A0%E6%A0%87%E5%85%B1%E4%BA%AB%2F</url>
+    <content type="text"><![CDATA[MacOS下的操作 关闭蓝牙，打开终端，删除MacOS的蓝牙信息 12sudo rm /private/var/root/Library/Preferences/com.apple.bluetoothd.plistsudo rm /Library/Preferences/com.apple.Bluetooth.plist 进行蓝牙鼠标配对，如果蓝牙里面还存在蓝牙设备信息，请手动删除再进行配对连接 连接成功后，进行蓝牙信息导出到桌面： 12sudo cp /private/var/root/Library/Preferences/com.apple.bluetoothd.plist ~/Desktopsudo cp /Library/Preferences/com.apple.Bluetooth.plist ~/Desktop/ 查看当前用户名，用于修改文件属性 1whoami 修改文件所属用户组，否则无法编辑 12sudo chown -R 用户名 com.apple.Bluetooth.plistsudo chown -R 用户名 com.apple.bluetoothd.plist 用PlistEdit Pro工具打开com.apple.bluetoothd.plist可以看到蓝牙信息 此时蓝牙的mac地址是：D4D365F79AF3 Windows下的 操作 删除所有已配对的蓝牙设备，进行蓝牙鼠标配对 下载PTStool工具，打开Powershell，cd命令进入PTStool工具，然后使用以下命令进入注册表 1.\psexec.exe -s -i \\127.0.0.1 regedit 进入： HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\Services\BTHPORT\Parameters\Keys\{电脑的蓝牙mac地址}\{鼠标的蓝牙mac地址} 右击导出到reg文件 右击导出的reg文件-&gt;编辑-&gt;复制所有数据到一个txt文档，并保存到U盘上，稍后MacOS会用到 重启进入MacOS 查看保存的txt文件，可以看到蓝牙鼠标mac地址已经发生改变 用PlistEdit Pro工具打开com.apple.bluetoothd.plist 按照图片替换数据，然后保存com.apple.bluetoothd.plist 打开com.apple.Bluetooth.plis，使用查找功能找到所有蓝牙鼠标的mac地址，修改成新的蓝牙mac地址，修改后保存 关闭蓝牙，复制修改好的文件到系统里： 12sudo cp ~/Desktop/com.apple.bluetoothd.plist /private/var/root/Library/Preferences/com.apple.bluetoothd.plistsudo cp ~/Desktop/com.apple.Bluetooth.plist /Library/Preferences/com.apple.Bluetooth.plist 进行修改权限和用户组 1234sudo chmod -R 600 /private/var/root/Library/Preferences/com.apple.bluetoothd.plistsudo chmod -R 600 /Library/Preferences/com.apple.Bluetooth.plistsudo chown root:wheel /private/var/root/Library/Preferences/com.apple.bluetoothd.plistsudo chown root:wheel /Library/Preferences/com.apple.Bluetooth.plist 重启电脑到Windows系统，查看鼠标是否正常连接 再重启MacOS，打开蓝牙，此时蓝牙鼠标会自动连接]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+        <tag>黑苹果</tag>
+        <tag>蓝牙鼠标</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Cron定时任务]]></title>

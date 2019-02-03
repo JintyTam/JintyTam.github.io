@@ -50,21 +50,15 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2019/01/29/Windows%E5%92%8CMacOS-%E8%93%9D%E7%89%994-0%E4%BB%A5%E4%B8%8A%E9%BC%A0%E6%A0%87%E5%85%B1%E4%BA%AB/"/>
-    <id>http://yoursite.com/2019/01/29/Windows和MacOS-蓝牙4-0以上鼠标共享/</id>
-    <published>2019-01-29T03:41:09.000Z</published>
-    <updated>2019-02-03T01:02:57.111Z</updated>
+    <title>Windows和MacOS 蓝牙4.0以上鼠标共享</title>
+    <link href="http://yoursite.com/2019/01/22/Windows%E5%92%8CMacOS-%E8%93%9D%E7%89%994-0%E4%BB%A5%E4%B8%8A%E9%BC%A0%E6%A0%87%E5%85%B1%E4%BA%AB/"/>
+    <id>http://yoursite.com/2019/01/22/Windows和MacOS-蓝牙4-0以上鼠标共享/</id>
+    <published>2019-01-22T03:41:09.000Z</published>
+    <updated>2019-02-03T01:04:44.011Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;title: Windows和MacOS 蓝牙4.0以上鼠标共享&lt;br&gt;date: 2019-01-22 11:41:09&lt;br&gt;categories: 学习笔记&lt;br&gt;tags: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Mac&lt;/li&gt;
-&lt;li&gt;黑苹果&lt;/li&gt;
-&lt;li&gt;蓝牙鼠标&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
+      &lt;ul&gt;
 &lt;li&gt;&lt;h5 id=&quot;MacOS下的操作&quot;&gt;&lt;a href=&quot;#MacOS下的操作&quot; class=&quot;headerlink&quot; title=&quot;MacOS下的操作&quot;&gt;&lt;/a&gt;MacOS下的操作&lt;/h5&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;关闭蓝牙，打开终端，删除MacOS的蓝牙信息&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo rm /private/var/root/Library/Preferences/com.apple.bluetoothd.plist&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo rm /Library/Preferences/com.apple.Bluetooth.plist&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -78,6 +72,14 @@
     
     </summary>
     
+      <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+      <category term="黑苹果" scheme="http://yoursite.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+      <category term="蓝牙鼠标" scheme="http://yoursite.com/tags/%E8%93%9D%E7%89%99%E9%BC%A0%E6%A0%87/"/>
     
   </entry>
   
