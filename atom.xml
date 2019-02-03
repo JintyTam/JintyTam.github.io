@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-30T05:01:40.599Z</updated>
+  <updated>2019-02-02T17:46:04.874Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/01/29/Mac%E4%B8%8Bhexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2019/01/29/Mac下hexo-github搭建个人博客/</id>
     <published>2019-01-29T05:05:41.000Z</published>
-    <updated>2019-01-30T05:01:40.599Z</updated>
+    <updated>2019-02-02T17:46:04.874Z</updated>
     
     <summary type="html">
     
@@ -54,20 +54,21 @@
     <link href="http://yoursite.com/2019/01/22/Windows%E5%92%8CMacOS-%E8%93%9D%E7%89%994-0%E4%BB%A5%E4%B8%8A%E9%BC%A0%E6%A0%87%E5%85%B1%E4%BA%AB/"/>
     <id>http://yoursite.com/2019/01/22/Windows和MacOS-蓝牙4-0以上鼠标共享/</id>
     <published>2019-01-22T03:41:09.000Z</published>
-    <updated>2019-01-29T04:30:01.030Z</updated>
+    <updated>2019-02-02T18:04:39.127Z</updated>
     
     <summary type="html">
     
       &lt;ul&gt;
 &lt;li&gt;&lt;h5 id=&quot;MacOS下的操作&quot;&gt;&lt;a href=&quot;#MacOS下的操作&quot; class=&quot;headerlink&quot; title=&quot;MacOS下的操作&quot;&gt;&lt;/a&gt;MacOS下的操作&lt;/h5&gt;&lt;ul&gt;
-&lt;li&gt;关闭蓝牙，打开终端，删除MacOS的蓝牙信息&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;关闭蓝牙，打开终端，删除MacOS的蓝牙信息&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo rm /private/var/root/Library/Preferences/com.apple.bluetoothd.plist&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo rm /Library/Preferences/com.apple.Bluetooth.plist&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;进行蓝牙鼠标配对，如果蓝牙里面还存在蓝牙设备信息，请手动删除再进行配对连接&lt;/li&gt;
-&lt;li&gt;连接成功后，进行蓝牙信息导出到桌面：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo cp /private/var/root/Library/Preferences/com.apple.bluetoothd.plist ~/Desktop&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo cp /Library/Preferences/com.apple.Bluetooth.plist ~/Desktop/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;进行蓝牙鼠标配对，如果蓝牙里面还存在蓝牙设备信息，请手动删除再进行配对连接&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;连接成功后，进行蓝牙信息导出到桌面：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo cp /private/var/root/Library/Preferences/com.apple.bluetoothd.plist ~/Desktop&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo cp /Library/Preferences/com.apple.Bluetooth.plist ~/Desktop/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
@@ -87,7 +88,7 @@
     <link href="http://yoursite.com/2018/05/23/Cron%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
     <id>http://yoursite.com/2018/05/23/Cron定时任务/</id>
     <published>2018-05-23T04:43:16.000Z</published>
-    <updated>2019-01-29T04:51:52.738Z</updated>
+    <updated>2019-01-29T04:51:52.730Z</updated>
     
     <summary type="html">
     
@@ -129,7 +130,7 @@
     <link href="http://yoursite.com/2018/05/23/%E6%A0%91%E8%8E%93%E6%B4%BE40pin%E5%BC%95%E8%84%9A%E5%9B%BE/"/>
     <id>http://yoursite.com/2018/05/23/树莓派40pin引脚图/</id>
     <published>2018-05-23T04:36:10.000Z</published>
-    <updated>2019-01-29T04:41:19.245Z</updated>
+    <updated>2019-01-29T04:41:19.240Z</updated>
     
     <summary type="html">
     
@@ -150,7 +151,7 @@
     <link href="http://yoursite.com/2018/05/21/html-php-axjx-%E5%B1%80%E9%83%A8%E5%AE%9A%E6%97%B6%E5%88%B7%E6%96%B0/"/>
     <id>http://yoursite.com/2018/05/21/html-php-axjx-局部定时刷新/</id>
     <published>2018-05-21T04:32:09.000Z</published>
-    <updated>2019-01-29T04:35:18.001Z</updated>
+    <updated>2019-01-29T04:35:18.000Z</updated>
     
     <summary type="html">
     
@@ -175,7 +176,7 @@
     <link href="http://yoursite.com/2018/05/20/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2018/05/20/树莓派折腾笔记/</id>
     <published>2018-05-20T04:20:13.000Z</published>
-    <updated>2019-01-29T04:31:20.398Z</updated>
+    <updated>2019-01-29T04:31:20.390Z</updated>
     
     <summary type="html">
     
@@ -206,7 +207,7 @@
     <link href="http://yoursite.com/2018/05/18/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2018/05/18/第一篇博客/</id>
     <published>2018-05-18T02:25:09.000Z</published>
-    <updated>2019-01-29T04:30:04.593Z</updated>
+    <updated>2019-01-29T04:30:04.590Z</updated>
     
     <summary type="html">
     
