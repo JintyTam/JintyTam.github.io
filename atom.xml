@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-02T17:46:04.874Z</updated>
+  <updated>2019-02-11T07:47:44.734Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>黑苹果CPU开启HWP实现变频</title>
+    <link href="http://yoursite.com/2019/02/11/%E9%BB%91%E8%8B%B9%E6%9E%9CCPU%E5%BC%80%E5%90%AFHWP%E5%AE%9E%E7%8E%B0%E5%8F%98%E9%A2%91/"/>
+    <id>http://yoursite.com/2019/02/11/黑苹果CPU开启HWP实现变频/</id>
+    <published>2019-02-11T06:59:46.000Z</published>
+    <updated>2019-02-11T07:47:44.734Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;h5 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;适合使用hwp开启cpu变频的用户&lt;/li&gt;
+&lt;li&gt;适合已经实现变频但最低频率较高的用户&lt;/li&gt;
+&lt;li&gt;适合当前CPU主频达不到CPU自身最高频率的用户&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+      <category term="黑苹果" scheme="http://yoursite.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+      <category term="CPU" scheme="http://yoursite.com/tags/CPU/"/>
+    
+      <category term="变频" scheme="http://yoursite.com/tags/%E5%8F%98%E9%A2%91/"/>
+    
+      <category term="HWP" scheme="http://yoursite.com/tags/HWP/"/>
+    
+  </entry>
   
   <entry>
     <title>Mac下hexo+github搭建个人博客</title>

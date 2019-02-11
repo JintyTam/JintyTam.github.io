@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[黑苹果CPU开启HWP实现变频]]></title>
+    <url>%2F2019%2F02%2F11%2F%E9%BB%91%E8%8B%B9%E6%9E%9CCPU%E5%BC%80%E5%90%AFHWP%E5%AE%9E%E7%8E%B0%E5%8F%98%E9%A2%91%2F</url>
+    <content type="text"><![CDATA[前言 适合使用hwp开启cpu变频的用户 适合已经实现变频但最低频率较高的用户 适合当前CPU主频达不到CPU自身最高频率的用户 查看当前smbios的board-id，开启HWP 打开clover configurator查看board-id 开启hwp，在config.plist的Cpu中勾选HWPEnable 修改plist文件 复制plist文件到桌面，注意路径最后的plist文件与当前系统使用的borad-id一致 1cp /System/Library/Extensions/IOPlatformPluginFamily.kext/Contents/PlugIns/X86PlatformPlugin.kext/Contents/Resources/Mac-CAD6701F7CEA0921.plist ~/Desktop/ 使用PlistEdit pro打开桌面的plist文件 修改Frequencies下面的参数，这里是CPU的最高频率 1#例如 2700 = 2.7GHz 修改FrequencyVectors下面的参数，第二列开头2个字节为CPU最低频率 1#例如 08000000 = 800MHz 添加以下参数使电源管理更加高效，参数后面为布尔值 12345678power_reduced_playbackthermally_optimized_xcodeoptimized_photobooththermally_optimized_xcodeoptimized_screensaversoptimized_slideshowsoptimized_visualizersthermally_optimized_maps 参考下图，Frequencies和FrequencyVectors只留下一个子项，其余删除 生成CPU变频驱动 打开终端 12345678#进入桌面cd ~/Desktop#下载CPUFriendDataProvider.kext生成工具git clone https://github.com/PMheart/CPUFriend#进入脚本目录cd ./CPUFriend/ResourceConverter#运行脚本生成CPUFriendDataProvider.kext，plist文件为上面修改好的./ResourceConverter.sh --kext ~/Desktop/Mac-CAD6701F7CEA0921.plist 查看桌面的文件夹CPUFriend/ResourceConverter/是否已经生成CPUFriendDataProvider.kext驱动 配合lilu和cpufriend实现变频 打开下面网址，下载lilu和CPUFriend驱动 1234#liluhttps://github.com/acidanthera/Lilu/releases#CPUFriendhttps://github.com/acidanthera/CPUFriend/releases 下载完成后，把lilu.kext和CPUFriend.kext，还有CPUFriendDataProvider.kext三个驱动一起放入clover/kexts/Other里面 重启查看CPU变频是否正常]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+        <tag>黑苹果</tag>
+        <tag>CPU</tag>
+        <tag>变频</tag>
+        <tag>HWP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Mac下hexo+github搭建个人博客]]></title>
     <url>%2F2019%2F01%2F29%2FMac%E4%B8%8Bhexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%2F</url>
     <content type="text"><![CDATA[安装Node.js 官网下载Node.js，打开文件安装 安装Xcode 在苹果商店搜索安装 配置github 新建github账号 创建仓库，注意仓库命名格式为：username.github.io，username要与用户名一致 添加SSHkey 终端输入命令：注意修改邮件地址 1ssh-keygen -t rsa -C "your_email@example.com" 打开~/.ssh/id_rsa.pub文件，复制内容，添加到github的SSH Keys设置里面 输入以下命令，测试sshkey是否生效 1ssh -T git@github.com 如果出现提示 1Are you sure you want to continue connecting (yes/no)? 输入yes 当出现以下提示时，说明ssh已经成功配置 1Hi username! You've successfully authenticated, but GitHub does not provide shell access. 安装hexo1sudo npm install --unsafe-perm --verbose -g hexo 安装时间比较长，请耐心等等 安装完成后，创建一个目录，用于储存搭建网站的所有文件 进入新建的目录，输入以下命令，初始化网站 1hexo init 安装依赖包 1npm install 常用命令 12345hexo new "文章名" #新建文章hexo clean #清除本地缓存hexo generate #生成静态文件hexo deploy #同步到githubhexo server #启动本地网站服务，可以在本地通过localhost:4000来进行访问 配置同步到github 安装插件 1sudo npm install hexo-deployer-git --save 编辑配置文件_config.yml，在deploy节点添加以下信息，注意username为github的用户名，每个：后面都有空格 1234deploy: type: git repo: git@github.com:username/username.github.io.git branch: master 安装加载本地图片插件 1sudo npm install hexo-asset-image --save 安装next主题 进入hexo网站目录，输入以下命令下载next主题 1git clone https://github.com/theme-next/hexo-theme-next theme/next/ 配置hexo的_config.yml，更改主题 12## Themes: https://hexo.io/themes/theme: next 当hexo配置文件有改动的时候，请清理缓存： 1hexo clean]]></content>
