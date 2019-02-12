@@ -350,6 +350,158 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/12/Mac-挂载EFI分区/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tam">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="此心有疾">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/02/12/Mac-挂载EFI分区/" class="post-title-link" itemprop="url">Mac 挂载EFI分区</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-12 17:59:45 / 修改时间：18:16:07" itemprop="dateCreated datePublished" datetime="2019-02-12T17:59:45+08:00">2019-02-12</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li><h5 id="查看分区信息"><a href="#查看分区信息" class="headerlink" title="查看分区信息"></a>查看分区信息</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">TSZs-MacBook-Pro:~ tsz$ diskutil list</span><br><span class="line">/dev/disk0 (internal):</span><br><span class="line">   <span class="comment">#:                       TYPE NAME                    SIZE       IDENTIFIER</span></span><br><span class="line">   0:      GUID_partition_scheme                         500.1 GB   disk0</span><br><span class="line">   1:           Windows Recovery                         523.2 MB   disk0s1</span><br><span class="line">   2:                        EFI NO NAME                 524.3 MB   disk0s2</span><br><span class="line">   3:         Microsoft Reserved                         16.8 MB    disk0s3</span><br><span class="line">   4:       Microsoft Basic Data                         274.9 GB   disk0s4</span><br><span class="line">   5:                 Apple_APFS Container disk1         224.0 GB   disk0s5</span><br><span class="line"></span><br><span class="line">/dev/disk1 (synthesized):</span><br><span class="line">   <span class="comment">#:                       TYPE NAME                    SIZE       IDENTIFIER</span></span><br><span class="line">   0:      APFS Container Scheme -                      +224.0 GB   disk1</span><br><span class="line">                                 Physical Store disk0s5</span><br><span class="line">   1:                APFS Volume MacOS                   68.9 GB    disk1s1</span><br><span class="line">   2:                APFS Volume Preboot                 45.0 MB    disk1s2</span><br><span class="line">   3:                APFS Volume Recovery                517.0 MB   disk1s3</span><br><span class="line">   4:                APFS Volume VM                      1.1 GB     disk1s4</span><br></pre></td></tr></table></figure>
+<ul>
+<li>确定efi分区为disk0的第2顺序分区，即 disk0s2</li>
+</ul>
+</li>
+<li><h5 id="挂载EFI分区"><a href="#挂载EFI分区" class="headerlink" title="挂载EFI分区"></a>挂载EFI分区</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo diskutil mount /dev/disk0s2</span><br></pre></td></tr></table></figure>
+</li>
+<li><h5 id="卸载EFI分区"><a href="#卸载EFI分区" class="headerlink" title="卸载EFI分区"></a>卸载EFI分区</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo diskutil unmount /dev/disk0s2</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/11/黑苹果CPU开启HWP实现变频/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -1860,7 +2012,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1918,7 +2070,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">14</span>
+                      
+                    
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>

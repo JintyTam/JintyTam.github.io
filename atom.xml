@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-11T07:47:44.734Z</updated>
+  <updated>2019-02-12T10:16:07.253Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac 挂载EFI分区</title>
+    <link href="http://yoursite.com/2019/02/12/Mac-%E6%8C%82%E8%BD%BDEFI%E5%88%86%E5%8C%BA/"/>
+    <id>http://yoursite.com/2019/02/12/Mac-挂载EFI分区/</id>
+    <published>2019-02-12T09:59:45.000Z</published>
+    <updated>2019-02-12T10:16:07.253Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;&lt;h5 id=&quot;查看分区信息&quot;&gt;&lt;a href=&quot;#查看分区信息&quot; class=&quot;headerlink&quot; title=&quot;查看分区信息&quot;&gt;&lt;/a&gt;查看分区信息&lt;/h5&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+      <category term="EFI" scheme="http://yoursite.com/tags/EFI/"/>
+    
+      <category term="黑苹果" scheme="http://yoursite.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>黑苹果CPU开启HWP实现变频</title>
