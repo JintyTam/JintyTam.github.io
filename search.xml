@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Windows挂载并访问efi分区]]></title>
+    <url>%2F2019%2F02%2F12%2FWindows%E6%8C%82%E8%BD%BD%E5%B9%B6%E8%AE%BF%E9%97%AEefi%E5%88%86%E5%8C%BA%2F</url>
+    <content type="text"><![CDATA[打开Power shell或者Cmd123456789101112131415161718输入 diskpart，进入磁盘dos工具输入 list disk，列出所有的磁盘输入 select disk x，x代表你要选的磁盘序号，例如：select disk 0输入 list partition，列出所选磁盘的分区输入 select partition x，x代表你所选磁盘的efi分区序号，例如：select partition 0输入 help setid，查看EFI分区的ID输入 SET ID=ebd0a0a2-b9e5-4433-87c0-68b6b72699c7，此id为上一步查看到的id，即可挂载EFI分区输入 assign letter = x，x为A~Z的未使用的驱动器号，资源管理器已经可以看到EFI分区，但是不能访问，此时需要重启系统，重启完后即可对EFI分区进行读写隐藏EFI分区:输入 diskpart，进入磁盘dos工具输入 list disk，列出所有的磁盘输入 select disk x，x代表你要选的磁盘序号，例如：select disk 0输入 list partition，列出所选磁盘的分区输入 select partition x，x代表你所选磁盘的efi分区序号，例如：select partition 0输入 SET ID=c12a7328-f81f-11d2-ba4b-00a0c93ec93b输入 remove letter = x，x为EFI分区当前的驱动器号]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>EFI</tag>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Mojave改变字体渲染方式]]></title>
+    <url>%2F2019%2F02%2F12%2FMojave%E6%94%B9%E5%8F%98%E5%AD%97%E4%BD%93%E6%B8%B2%E6%9F%93%E6%96%B9%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[解决非Retina屏字体发虚问题 打开 【终端】应用，输入下面命令，全局启用【次像素抗锯齿】渲染 1defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO 设置字体【次像素抗锯齿】级别（微调样式）的命令： 1defaults -currentHost write -globalDomain AppleFontSmoothing -int 3 还原命令： 12defaults write -g CGFontRenderingFontSmoothingDisabled -bool YESdefaults -currentHost delete -globalDomain AppleFontSmoothing]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+        <tag>黑苹果</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Mac 挂载EFI分区]]></title>
     <url>%2F2019%2F02%2F12%2FMac-%E6%8C%82%E8%BD%BDEFI%E5%88%86%E5%8C%BA%2F</url>
     <content type="text"><![CDATA[查看分区信息123456789101112131415161718TSZs-MacBook-Pro:~ tsz$ diskutil list/dev/disk0 (internal): #: TYPE NAME SIZE IDENTIFIER 0: GUID_partition_scheme 500.1 GB disk0 1: Windows Recovery 523.2 MB disk0s1 2: EFI NO NAME 524.3 MB disk0s2 3: Microsoft Reserved 16.8 MB disk0s3 4: Microsoft Basic Data 274.9 GB disk0s4 5: Apple_APFS Container disk1 224.0 GB disk0s5/dev/disk1 (synthesized): #: TYPE NAME SIZE IDENTIFIER 0: APFS Container Scheme - +224.0 GB disk1 Physical Store disk0s5 1: APFS Volume MacOS 68.9 GB disk1s1 2: APFS Volume Preboot 45.0 MB disk1s2 3: APFS Volume Recovery 517.0 MB disk1s3 4: APFS Volume VM 1.1 GB disk1s4 确定efi分区为disk0的第2顺序分区，即 disk0s2 挂载EFI分区1sudo diskutil mount /dev/disk0s2 卸载EFI分区1sudo diskutil unmount /dev/disk0s2]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
       <tags>
         <tag>Mac</tag>
         <tag>EFI</tag>
