@@ -395,12 +395,24 @@
                 
               
 
-              <time title="创建时间：2019-02-12 23:11:18 / 修改时间：23:13:13" itemprop="dateCreated datePublished" datetime="2019-02-12T23:11:18+08:00">2019-02-12</time>
+              <time title="创建时间：2019-02-12 23:11:18" itemprop="dateCreated datePublished" datetime="2019-02-12T23:11:18+08:00">2019-02-12</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-02-13 12:27:38" itemprop="dateModified" datetime="2019-02-13T12:27:38+08:00">2019-02-13</time>
               
             
           </span>
@@ -455,6 +467,7 @@
         
           
             <h5 id="打开Power-shell或者Cmd"><a href="#打开Power-shell或者Cmd" class="headerlink" title="打开Power shell或者Cmd"></a>打开Power shell或者Cmd</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">输入 diskpart，进入磁盘dos工具</span><br><span class="line">输入 list disk，列出所有的磁盘</span><br><span class="line">输入 select disk x，x代表你要选的磁盘序号，例如：select disk 0</span><br><span class="line">输入 list partition，列出所选磁盘的分区</span><br><span class="line">输入 select partition x，x代表你所选磁盘的efi分区序号，例如：select partition 0</span><br><span class="line">输入 <span class="built_in">help</span> setid，查看EFI分区的ID</span><br><span class="line">输入 SET ID=ebd0a0a2-b9e5-4433-87c0-68b6b72699c7，此id为上一步查看到的id，即可挂载EFI分区</span><br><span class="line">输入 assign letter = x，x为A~Z的未使用的驱动器号，</span><br><span class="line">资源管理器已经可以看到EFI分区，但是不能访问，此时需要重启系统，重启完后即可对EFI分区进行读写</span><br><span class="line"></span><br><span class="line">隐藏EFI分区:</span><br><span class="line">输入 diskpart，进入磁盘dos工具</span><br><span class="line">输入 list disk，列出所有的磁盘</span><br><span class="line">输入 select disk x，x代表你要选的磁盘序号，例如：select disk 0</span><br><span class="line">输入 list partition，列出所选磁盘的分区</span><br><span class="line">输入 select partition x，x代表你所选磁盘的efi分区序号，例如：select partition 0</span><br><span class="line">输入 SET ID=c12a7328-f81f-11d2-ba4b-00a0c93ec93b</span><br><span class="line">输入 remove letter = x，x为EFI分区当前的驱动器号</span><br></pre></td></tr></table></figure>
+
           
         
       
@@ -2306,6 +2319,21 @@
 
 
 
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 
         
 
