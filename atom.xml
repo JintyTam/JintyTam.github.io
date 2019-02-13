@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://www.tam.ink/"/>
   <updated>2019-02-13T04:27:38.388Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://www.tam.ink/</id>
   
   <author>
     <name>Tam</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Windows挂载并访问efi分区</title>
-    <link href="http://yoursite.com/2019/02/12/Windows%E6%8C%82%E8%BD%BD%E5%B9%B6%E8%AE%BF%E9%97%AEefi%E5%88%86%E5%8C%BA/"/>
-    <id>http://yoursite.com/2019/02/12/Windows挂载并访问efi分区/</id>
+    <link href="https://www.tam.ink/2019/02/12/Windows%E6%8C%82%E8%BD%BD%E5%B9%B6%E8%AE%BF%E9%97%AEefi%E5%88%86%E5%8C%BA/"/>
+    <id>https://www.tam.ink/2019/02/12/Windows挂载并访问efi分区/</id>
     <published>2019-02-12T15:11:18.000Z</published>
     <updated>2019-02-13T04:27:38.388Z</updated>
     
@@ -35,19 +35,19 @@
     
     </summary>
     
-      <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://www.tam.ink/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="EFI" scheme="http://yoursite.com/tags/EFI/"/>
+      <category term="EFI" scheme="https://www.tam.ink/tags/EFI/"/>
     
-      <category term="Windows" scheme="http://yoursite.com/tags/Windows/"/>
+      <category term="Windows" scheme="https://www.tam.ink/tags/Windows/"/>
     
   </entry>
   
   <entry>
     <title>Mojave改变字体渲染方式</title>
-    <link href="http://yoursite.com/2019/02/12/Mojave%E6%94%B9%E5%8F%98%E5%AD%97%E4%BD%93%E6%B8%B2%E6%9F%93%E6%96%B9%E5%BC%8F/"/>
-    <id>http://yoursite.com/2019/02/12/Mojave改变字体渲染方式/</id>
+    <link href="https://www.tam.ink/2019/02/12/Mojave%E6%94%B9%E5%8F%98%E5%AD%97%E4%BD%93%E6%B8%B2%E6%9F%93%E6%96%B9%E5%BC%8F/"/>
+    <id>https://www.tam.ink/2019/02/12/Mojave改变字体渲染方式/</id>
     <published>2019-02-12T15:05:30.000Z</published>
     <updated>2019-02-12T15:12:48.457Z</updated>
     
@@ -64,19 +64,19 @@
     
     </summary>
     
-      <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://www.tam.ink/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+      <category term="Mac" scheme="https://www.tam.ink/tags/Mac/"/>
     
-      <category term="黑苹果" scheme="http://yoursite.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="https://www.tam.ink/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
   </entry>
   
   <entry>
     <title>Mac 挂载EFI分区</title>
-    <link href="http://yoursite.com/2019/02/12/Mac-%E6%8C%82%E8%BD%BDEFI%E5%88%86%E5%8C%BA/"/>
-    <id>http://yoursite.com/2019/02/12/Mac-挂载EFI分区/</id>
+    <link href="https://www.tam.ink/2019/02/12/Mac-%E6%8C%82%E8%BD%BDEFI%E5%88%86%E5%8C%BA/"/>
+    <id>https://www.tam.ink/2019/02/12/Mac-挂载EFI分区/</id>
     <published>2019-02-12T09:59:45.000Z</published>
     <updated>2019-02-12T15:12:54.958Z</updated>
     
@@ -93,21 +93,21 @@
     
     </summary>
     
-      <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://www.tam.ink/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+      <category term="Mac" scheme="https://www.tam.ink/tags/Mac/"/>
     
-      <category term="EFI" scheme="http://yoursite.com/tags/EFI/"/>
+      <category term="EFI" scheme="https://www.tam.ink/tags/EFI/"/>
     
-      <category term="黑苹果" scheme="http://yoursite.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="https://www.tam.ink/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
   </entry>
   
   <entry>
     <title>黑苹果CPU开启HWP实现变频</title>
-    <link href="http://yoursite.com/2019/02/11/%E9%BB%91%E8%8B%B9%E6%9E%9CCPU%E5%BC%80%E5%90%AFHWP%E5%AE%9E%E7%8E%B0%E5%8F%98%E9%A2%91/"/>
-    <id>http://yoursite.com/2019/02/11/黑苹果CPU开启HWP实现变频/</id>
+    <link href="https://www.tam.ink/2019/02/11/%E9%BB%91%E8%8B%B9%E6%9E%9CCPU%E5%BC%80%E5%90%AFHWP%E5%AE%9E%E7%8E%B0%E5%8F%98%E9%A2%91/"/>
+    <id>https://www.tam.ink/2019/02/11/黑苹果CPU开启HWP实现变频/</id>
     <published>2019-02-11T06:59:46.000Z</published>
     <updated>2019-02-11T07:47:44.734Z</updated>
     
@@ -122,25 +122,25 @@
     
     </summary>
     
-      <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://www.tam.ink/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+      <category term="Mac" scheme="https://www.tam.ink/tags/Mac/"/>
     
-      <category term="黑苹果" scheme="http://yoursite.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="https://www.tam.ink/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
-      <category term="CPU" scheme="http://yoursite.com/tags/CPU/"/>
+      <category term="CPU" scheme="https://www.tam.ink/tags/CPU/"/>
     
-      <category term="变频" scheme="http://yoursite.com/tags/%E5%8F%98%E9%A2%91/"/>
+      <category term="变频" scheme="https://www.tam.ink/tags/%E5%8F%98%E9%A2%91/"/>
     
-      <category term="HWP" scheme="http://yoursite.com/tags/HWP/"/>
+      <category term="HWP" scheme="https://www.tam.ink/tags/HWP/"/>
     
   </entry>
   
   <entry>
     <title>Mac下hexo+github搭建个人博客</title>
-    <link href="http://yoursite.com/2019/01/29/Mac%E4%B8%8Bhexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2019/01/29/Mac下hexo-github搭建个人博客/</id>
+    <link href="https://www.tam.ink/2019/01/29/Mac%E4%B8%8Bhexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://www.tam.ink/2019/01/29/Mac下hexo-github搭建个人博客/</id>
     <published>2019-01-29T05:05:41.000Z</published>
     <updated>2019-02-02T17:46:04.874Z</updated>
     
@@ -159,21 +159,21 @@
     
     </summary>
     
-      <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://www.tam.ink/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+      <category term="Mac" scheme="https://www.tam.ink/tags/Mac/"/>
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://www.tam.ink/tags/hexo/"/>
     
-      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+      <category term="github" scheme="https://www.tam.ink/tags/github/"/>
     
   </entry>
   
   <entry>
     <title>Windows和MacOS 蓝牙4.0以上鼠标共享</title>
-    <link href="http://yoursite.com/2019/01/22/Windows%E5%92%8CMacOS-%E8%93%9D%E7%89%994-0%E4%BB%A5%E4%B8%8A%E9%BC%A0%E6%A0%87%E5%85%B1%E4%BA%AB/"/>
-    <id>http://yoursite.com/2019/01/22/Windows和MacOS-蓝牙4-0以上鼠标共享/</id>
+    <link href="https://www.tam.ink/2019/01/22/Windows%E5%92%8CMacOS-%E8%93%9D%E7%89%994-0%E4%BB%A5%E4%B8%8A%E9%BC%A0%E6%A0%87%E5%85%B1%E4%BA%AB/"/>
+    <id>https://www.tam.ink/2019/01/22/Windows和MacOS-蓝牙4-0以上鼠标共享/</id>
     <published>2019-01-22T03:41:09.000Z</published>
     <updated>2019-02-03T01:06:39.710Z</updated>
     
@@ -193,21 +193,21 @@
     
     </summary>
     
-      <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://www.tam.ink/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+      <category term="Mac" scheme="https://www.tam.ink/tags/Mac/"/>
     
-      <category term="黑苹果" scheme="http://yoursite.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="https://www.tam.ink/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
-      <category term="蓝牙鼠标" scheme="http://yoursite.com/tags/%E8%93%9D%E7%89%99%E9%BC%A0%E6%A0%87/"/>
+      <category term="蓝牙鼠标" scheme="https://www.tam.ink/tags/%E8%93%9D%E7%89%99%E9%BC%A0%E6%A0%87/"/>
     
   </entry>
   
   <entry>
     <title>Cron定时任务</title>
-    <link href="http://yoursite.com/2018/05/23/Cron%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
-    <id>http://yoursite.com/2018/05/23/Cron定时任务/</id>
+    <link href="https://www.tam.ink/2018/05/23/Cron%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
+    <id>https://www.tam.ink/2018/05/23/Cron定时任务/</id>
     <published>2018-05-23T04:43:16.000Z</published>
     <updated>2019-01-29T04:51:52.730Z</updated>
     
@@ -237,19 +237,19 @@
     
     </summary>
     
-      <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://www.tam.ink/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="树莓派" scheme="http://yoursite.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+      <category term="树莓派" scheme="https://www.tam.ink/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
     
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://www.tam.ink/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>树莓派40pin引脚图</title>
-    <link href="http://yoursite.com/2018/05/23/%E6%A0%91%E8%8E%93%E6%B4%BE40pin%E5%BC%95%E8%84%9A%E5%9B%BE/"/>
-    <id>http://yoursite.com/2018/05/23/树莓派40pin引脚图/</id>
+    <link href="https://www.tam.ink/2018/05/23/%E6%A0%91%E8%8E%93%E6%B4%BE40pin%E5%BC%95%E8%84%9A%E5%9B%BE/"/>
+    <id>https://www.tam.ink/2018/05/23/树莓派40pin引脚图/</id>
     <published>2018-05-23T04:36:10.000Z</published>
     <updated>2019-01-29T04:41:19.240Z</updated>
     
@@ -260,17 +260,17 @@
     
     </summary>
     
-      <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://www.tam.ink/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="树莓派" scheme="http://yoursite.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+      <category term="树莓派" scheme="https://www.tam.ink/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
     
   </entry>
   
   <entry>
     <title>html+php+axjx 局部定时刷新</title>
-    <link href="http://yoursite.com/2018/05/21/html-php-axjx-%E5%B1%80%E9%83%A8%E5%AE%9A%E6%97%B6%E5%88%B7%E6%96%B0/"/>
-    <id>http://yoursite.com/2018/05/21/html-php-axjx-局部定时刷新/</id>
+    <link href="https://www.tam.ink/2018/05/21/html-php-axjx-%E5%B1%80%E9%83%A8%E5%AE%9A%E6%97%B6%E5%88%B7%E6%96%B0/"/>
+    <id>https://www.tam.ink/2018/05/21/html-php-axjx-局部定时刷新/</id>
     <published>2018-05-21T04:32:09.000Z</published>
     <updated>2019-01-29T04:35:18.000Z</updated>
     
@@ -281,21 +281,21 @@
     
     </summary>
     
-      <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://www.tam.ink/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+      <category term="html" scheme="https://www.tam.ink/tags/html/"/>
     
-      <category term="axjx" scheme="http://yoursite.com/tags/axjx/"/>
+      <category term="axjx" scheme="https://www.tam.ink/tags/axjx/"/>
     
-      <category term="php" scheme="http://yoursite.com/tags/php/"/>
+      <category term="php" scheme="https://www.tam.ink/tags/php/"/>
     
   </entry>
   
   <entry>
     <title>树莓派折腾笔记</title>
-    <link href="http://yoursite.com/2018/05/20/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2018/05/20/树莓派折腾笔记/</id>
+    <link href="https://www.tam.ink/2018/05/20/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
+    <id>https://www.tam.ink/2018/05/20/树莓派折腾笔记/</id>
     <published>2018-05-20T04:20:13.000Z</published>
     <updated>2019-01-29T04:31:20.390Z</updated>
     
@@ -316,17 +316,17 @@
     
     </summary>
     
-      <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="学习笔记" scheme="https://www.tam.ink/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="树莓派" scheme="http://yoursite.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+      <category term="树莓派" scheme="https://www.tam.ink/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
     
   </entry>
   
   <entry>
     <title>2018-05-18 创建主站</title>
-    <link href="http://yoursite.com/2018/05/18/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2018/05/18/第一篇博客/</id>
+    <link href="https://www.tam.ink/2018/05/18/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://www.tam.ink/2018/05/18/第一篇博客/</id>
     <published>2018-05-18T02:25:09.000Z</published>
     <updated>2019-01-29T04:30:04.590Z</updated>
     
@@ -341,10 +341,10 @@
     
     </summary>
     
-      <category term="随手记" scheme="http://yoursite.com/categories/%E9%9A%8F%E6%89%8B%E8%AE%B0/"/>
+      <category term="随手记" scheme="https://www.tam.ink/categories/%E9%9A%8F%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
+      <category term="markdown" scheme="https://www.tam.ink/tags/markdown/"/>
     
   </entry>
   
