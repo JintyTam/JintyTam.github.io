@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.tam.ink/"/>
-  <updated>2019-02-13T04:27:38.388Z</updated>
+  <updated>2019-02-14T19:04:42.135Z</updated>
   <id>https://www.tam.ink/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>黑苹果-笔记本屏蔽独显（DSDT转hotpatch方式）</title>
+    <link href="https://www.tam.ink/2019/02/14/%E9%BB%91%E8%8B%B9%E6%9E%9C-%E7%AC%94%E8%AE%B0%E6%9C%AC%E5%B1%8F%E8%94%BD%E7%8B%AC%E6%98%BE/"/>
+    <id>https://www.tam.ink/2019/02/14/黑苹果-笔记本屏蔽独显/</id>
+    <published>2019-02-14T13:14:02.000Z</published>
+    <updated>2019-02-14T19:04:42.135Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;h5 id=&quot;提取dsdt&quot;&gt;&lt;a href=&quot;#提取dsdt&quot; class=&quot;headerlink&quot; title=&quot;提取dsdt&quot;&gt;&lt;/a&gt;提取dsdt&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;开机进入clover引导界面，按F4提取dsdt，dsdt存放在efi分区的EFI/CLOVER/ACPI/origin/里面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h5 id=&quot;反编译dsdt和ssdt文件&quot;&gt;&lt;a href=&quot;#反编译dsdt和ssdt文件&quot; class=&quot;headerlink&quot; title=&quot;反编译dsdt和ssdt文件&quot;&gt;&lt;/a&gt;反编译dsdt和ssdt文件&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;打开终端，复制origin文件夹到桌面&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cp -R /Volumes/&amp;#123;EFI分区卷标&amp;#125;/EFI/CLOVER/ACPI/origin/ ~/Desktop/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;删除除了DSDT和SSDT开头文件以外的所有aml文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;反编译aml文件为dsl文件，（自行安装iasl）&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; ~/Desktop/origin&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;iasl -da -dl *.aml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="https://www.tam.ink/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Mac" scheme="https://www.tam.ink/tags/Mac/"/>
+    
+      <category term="黑苹果" scheme="https://www.tam.ink/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+      <category term="独显" scheme="https://www.tam.ink/tags/%E7%8B%AC%E6%98%BE/"/>
+    
+      <category term="hotpatch" scheme="https://www.tam.ink/tags/hotpatch/"/>
+    
+  </entry>
   
   <entry>
     <title>Windows挂载并访问efi分区</title>

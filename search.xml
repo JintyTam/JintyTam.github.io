@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[黑苹果-笔记本屏蔽独显（DSDT转hotpatch方式）]]></title>
+    <url>%2F2019%2F02%2F14%2F%E9%BB%91%E8%8B%B9%E6%9E%9C-%E7%AC%94%E8%AE%B0%E6%9C%AC%E5%B1%8F%E8%94%BD%E7%8B%AC%E6%98%BE%2F</url>
+    <content type="text"><![CDATA[提取dsdt 开机进入clover引导界面，按F4提取dsdt，dsdt存放在efi分区的EFI/CLOVER/ACPI/origin/里面 反编译dsdt和ssdt文件 打开终端，复制origin文件夹到桌面 1cp -R /Volumes/&#123;EFI分区卷标&#125;/EFI/CLOVER/ACPI/origin/ ~/Desktop/ 删除除了DSDT和SSDT开头文件以外的所有aml文件 反编译aml文件为dsl文件，（自行安装iasl） 12cd ~/Desktop/originiasl -da -dl *.aml 查找关闭独显的Method 终端运行以下命令，找出相同的dsl文件 12grep -l Method.*_OFF *.dslgrep -l Method.*_INI *.dsl 例如： 使用MaciASL工具打开上面相同名字的dsl文件 搜索 Method (_INI 找到类似下图的 Store (Zero, \_SB.PCI0.RP01.PXSX._ADR) 查看左边树状图该Method的位置 例如图上的位置是\_SB.PCI0.RP01.PXSX，那么，关闭独显的方法就是 \_SB.PCI0.RP01.PXSX._OFF，在后面添加 ._OFF 配置SSDT-DDGPU.aml 使用MaciASL打开SSDT-DDGPU.aml文件 把你找到的_OFF方法添加到Method (_INI, 0, NotSerialized)里面 注意需要添加External，复制上面的if判断，改为自己的_OFF方法 把SSDT-DDGPU.aml放到/CLOVER/ACPI/patched/下面，重启进入关于本机-系统报告-图形卡/显示器 查看]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+        <tag>黑苹果</tag>
+        <tag>独显</tag>
+        <tag>hotpatch</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Windows挂载并访问efi分区]]></title>
     <url>%2F2019%2F02%2F12%2FWindows%E6%8C%82%E8%BD%BD%E5%B9%B6%E8%AE%BF%E9%97%AEefi%E5%88%86%E5%8C%BA%2F</url>
     <content type="text"><![CDATA[打开Power shell或者Cmd123456789101112131415161718输入 diskpart，进入磁盘dos工具输入 list disk，列出所有的磁盘输入 select disk x，x代表你要选的磁盘序号，例如：select disk 0输入 list partition，列出所选磁盘的分区输入 select partition x，x代表你所选磁盘的efi分区序号，例如：select partition 0输入 help setid，查看EFI分区的ID输入 SET ID=ebd0a0a2-b9e5-4433-87c0-68b6b72699c7，此id为上一步查看到的id，即可挂载EFI分区输入 assign letter = x，x为A~Z的未使用的驱动器号，资源管理器已经可以看到EFI分区，但是不能访问，此时需要重启系统，重启完后即可对EFI分区进行读写隐藏EFI分区:输入 diskpart，进入磁盘dos工具输入 list disk，列出所有的磁盘输入 select disk x，x代表你要选的磁盘序号，例如：select disk 0输入 list partition，列出所选磁盘的分区输入 select partition x，x代表你所选磁盘的efi分区序号，例如：select partition 0输入 SET ID=c12a7328-f81f-11d2-ba4b-00a0c93ec93b输入 remove letter = x，x为EFI分区当前的驱动器号]]></content>

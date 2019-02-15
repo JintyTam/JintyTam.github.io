@@ -96,13 +96,23 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="此心有疾">
-<meta property="og:url" content="https://www.tam.ink/archives/2018/05/index.html">
+  <meta name="description" content="提取dsdt 开机进入clover引导界面，按F4提取dsdt，dsdt存放在efi分区的EFI/CLOVER/ACPI/origin/里面   反编译dsdt和ssdt文件 打开终端，复制origin文件夹到桌面 1cp -R /Volumes/&amp;#123;EFI分区卷标&amp;#125;/EFI/CLOVER/ACPI/origin/ ~/Desktop/  删除除了DSDT和SSDT开头文件以外">
+<meta name="keywords" content="Mac,黑苹果,独显,hotpatch">
+<meta property="og:type" content="article">
+<meta property="og:title" content="黑苹果-笔记本屏蔽独显（DSDT转hotpatch方式）">
+<meta property="og:url" content="https://www.tam.ink/2019/02/14/黑苹果-笔记本屏蔽独显/index.html">
 <meta property="og:site_name" content="此心有疾">
+<meta property="og:description" content="提取dsdt 开机进入clover引导界面，按F4提取dsdt，dsdt存放在efi分区的EFI/CLOVER/ACPI/origin/里面   反编译dsdt和ssdt文件 打开终端，复制origin文件夹到桌面 1cp -R /Volumes/&amp;#123;EFI分区卷标&amp;#125;/EFI/CLOVER/ACPI/origin/ ~/Desktop/  删除除了DSDT和SSDT开头文件以外">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://www.tam.ink/2019/02/14/黑苹果-笔记本屏蔽独显/QQ20190215-023226.png">
+<meta property="og:image" content="https://www.tam.ink/2019/02/14/黑苹果-笔记本屏蔽独显/QQ20190215-023139.png">
+<meta property="og:image" content="https://www.tam.ink/2019/02/14/黑苹果-笔记本屏蔽独显/QQ20190215-025203.png">
+<meta property="og:image" content="https://www.tam.ink/2019/02/14/黑苹果-笔记本屏蔽独显/QQ20190215-030003.png">
+<meta property="og:updated_time" content="2019-02-14T19:04:42.135Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="此心有疾">
+<meta name="twitter:title" content="黑苹果-笔记本屏蔽独显（DSDT转hotpatch方式）">
+<meta name="twitter:description" content="提取dsdt 开机进入clover引导界面，按F4提取dsdt，dsdt存放在efi分区的EFI/CLOVER/ACPI/origin/里面   反编译dsdt和ssdt文件 打开终端，复制origin文件夹到桌面 1cp -R /Volumes/&amp;#123;EFI分区卷标&amp;#125;/EFI/CLOVER/ACPI/origin/ ~/Desktop/  删除除了DSDT和SSDT开头文件以外">
+<meta name="twitter:image" content="https://www.tam.ink/2019/02/14/黑苹果-笔记本屏蔽独显/QQ20190215-023226.png">
 
 
 
@@ -111,7 +121,7 @@
 
 
 
-  <link rel="canonical" href="https://www.tam.ink/archives/2018/05/">
+  <link rel="canonical" href="https://www.tam.ink/2019/02/14/黑苹果-笔记本屏蔽独显/">
 
 
 
@@ -121,7 +131,7 @@
   };
 </script>
 
-  <title>时间轴 | 此心有疾</title>
+  <title>黑苹果-笔记本屏蔽独显（DSDT转hotpatch方式） | 此心有疾</title>
   
 
 
@@ -169,7 +179,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -241,7 +251,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -288,25 +298,6 @@
   
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
   
 
   
@@ -352,218 +343,261 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.tam.ink/2019/02/14/黑苹果-笔记本屏蔽独显/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tam">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="此心有疾">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">黑苹果-笔记本屏蔽独显（DSDT转hotpatch方式）
+
+              
+            
+          </h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-14 21:14:02" itemprop="dateCreated datePublished" datetime="2019-02-14T21:14:02+08:00">2019-02-14</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-02-15 03:04:42" itemprop="dateModified" datetime="2019-02-15T03:04:42+08:00">2019-02-15</time>
+              
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 12 篇日志。 继续努力。
-      </span>
-      
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
 
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2018/05/23/Cron定时任务/" itemprop="url">
+          
             
-              <span itemprop="name">Cron定时任务</span>
             
-          </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-05-23T12:43:16+08:00" content="2018-05-23">
-          05-23
-        </time>
-      </div>
+          
+          
 
-    </header>
-  </article>
+          
 
+          
 
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2018/05/23/树莓派40pin引脚图/" itemprop="url">
-            
-              <span itemprop="name">树莓派40pin引脚图</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-05-23T12:36:10+08:00" content="2018-05-23">
-          05-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2018/05/21/html-php-axjx-局部定时刷新/" itemprop="url">
-            
-              <span itemprop="name">html+php+axjx 局部定时刷新</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-05-21T12:32:09+08:00" content="2018-05-21">
-          05-21
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <ul>
+<li><h5 id="提取dsdt"><a href="#提取dsdt" class="headerlink" title="提取dsdt"></a>提取dsdt</h5><ul>
+<li>开机进入clover引导界面，按F4提取dsdt，dsdt存放在efi分区的EFI/CLOVER/ACPI/origin/里面</li>
+</ul>
+</li>
+<li><h5 id="反编译dsdt和ssdt文件"><a href="#反编译dsdt和ssdt文件" class="headerlink" title="反编译dsdt和ssdt文件"></a>反编译dsdt和ssdt文件</h5><ul>
+<li><p>打开终端，复制origin文件夹到桌面</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -R /Volumes/&#123;EFI分区卷标&#125;/EFI/CLOVER/ACPI/origin/ ~/Desktop/</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除除了DSDT和SSDT开头文件以外的所有aml文件</p>
+</li>
+<li><p>反编译aml文件为dsl文件，（自行安装iasl）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/Desktop/origin</span><br><span class="line">iasl -da -dl *.aml</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<a id="more"></a>
+</li>
+<li><h5 id="查找关闭独显的Method"><a href="#查找关闭独显的Method" class="headerlink" title="查找关闭独显的Method"></a>查找关闭独显的Method</h5><ul>
+<li><p>终端运行以下命令，找出相同的dsl文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">grep -l Method.*_OFF *.dsl</span><br><span class="line">grep -l Method.*_INI *.dsl</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>例如：<img src="/2019/02/14/黑苹果-笔记本屏蔽独显/QQ20190215-023226.png" alt=""></p>
+</li>
+<li><p>使用MaciASL工具打开上面相同名字的dsl文件</p>
+<ul>
+<li><p>搜索   Method (_INI </p>
+</li>
+<li><p>找到类似下图的  Store (Zero, \_SB.PCI0.RP01.PXSX._ADR)</p>
+</li>
+<li><p>查看左边树状图该Method的位置</p>
+<p><img src="/2019/02/14/黑苹果-笔记本屏蔽独显/QQ20190215-023139.png" alt=""></p>
+</li>
+<li><p>例如图上的位置是\_SB.PCI0.RP01.PXSX，那么，关闭独显的方法就是 \_SB.PCI0.RP01.PXSX._OFF，在后面添加 ._OFF</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h5 id="配置SSDT-DDGPU-aml"><a href="#配置SSDT-DDGPU-aml" class="headerlink" title="配置SSDT-DDGPU.aml"></a>配置SSDT-DDGPU.aml</h5><ul>
+<li><p>使用MaciASL打开SSDT-DDGPU.aml文件</p>
+</li>
+<li><p>把你找到的_OFF方法添加到Method (_INI, 0, NotSerialized)里面</p>
+<p><img src="/2019/02/14/黑苹果-笔记本屏蔽独显/QQ20190215-025203.png" alt=""></p>
+<ul>
+<li>注意需要添加External，复制上面的if判断，改为自己的_OFF方法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h5 id="把SSDT-DDGPU-aml放到-CLOVER-ACPI-patched-下面，重启进入关于本机-系统报告-图形卡-显示器-查看"><a href="#把SSDT-DDGPU-aml放到-CLOVER-ACPI-patched-下面，重启进入关于本机-系统报告-图形卡-显示器-查看" class="headerlink" title="把SSDT-DDGPU.aml放到/CLOVER/ACPI/patched/下面，重启进入关于本机-系统报告-图形卡/显示器 查看"></a>把SSDT-DDGPU.aml放到/CLOVER/ACPI/patched/下面，重启进入关于本机-系统报告-图形卡/显示器 查看</h5><p><img src="/2019/02/14/黑苹果-笔记本屏蔽独显/QQ20190215-030003.png" alt=""></p>
+</li>
+</ul>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2018/05/20/树莓派折腾笔记/" itemprop="url">
-            
-              <span itemprop="name">树莓派折腾笔记</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-05-20T12:20:13+08:00" content="2018-05-20">
-          05-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2018/05/18/第一篇博客/" itemprop="url">
-            
-              <span itemprop="name">2018-05-18 创建主站</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-05-18T10:25:09+08:00" content="2018-05-18">
-          05-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Mac/" rel="tag"># Mac</a>
+          
+            <a href="/tags/黑苹果/" rel="tag"># 黑苹果</a>
+          
+            <a href="/tags/独显/" rel="tag"># 独显</a>
+          
+            <a href="/tags/hotpatch/" rel="tag"># hotpatch</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/02/12/Windows挂载并访问efi分区/" rel="next" title="Windows挂载并访问efi分区">
+                <i class="fa fa-chevron-left"></i> Windows挂载并访问efi分区
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -584,8 +618,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -698,6 +741,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#提取dsdt"><span class="nav-number">1.</span> <span class="nav-text">提取dsdt</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#反编译dsdt和ssdt文件"><span class="nav-number">2.</span> <span class="nav-text">反编译dsdt和ssdt文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#查找关闭独显的Method"><span class="nav-number">3.</span> <span class="nav-text">查找关闭独显的Method</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#配置SSDT-DDGPU-aml"><span class="nav-number">4.</span> <span class="nav-text">配置SSDT-DDGPU.aml</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#把SSDT-DDGPU-aml放到-CLOVER-ACPI-patched-下面，重启进入关于本机-系统报告-图形卡-显示器-查看"><span class="nav-number">5.</span> <span class="nav-text">把SSDT-DDGPU.aml放到/CLOVER/ACPI/patched/下面，重启进入关于本机-系统报告-图形卡/显示器 查看</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -835,6 +895,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
 
   
 
@@ -845,6 +909,8 @@
 
   
 
+
+  
 
 
   
