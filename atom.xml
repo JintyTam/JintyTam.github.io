@@ -120,18 +120,21 @@
     <link href="https://www.tam.ink/2019/02/12/Mojave%E6%94%B9%E5%8F%98%E5%AD%97%E4%BD%93%E6%B8%B2%E6%9F%93%E6%96%B9%E5%BC%8F/"/>
     <id>https://www.tam.ink/2019/02/12/Mojave改变字体渲染方式/</id>
     <published>2019-02-12T15:05:30.000Z</published>
-    <updated>2019-02-12T15:12:48.457Z</updated>
+    <updated>2019-02-15T14:12:03.721Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h4 id=&quot;解决非Retina屏字体发虚问题&quot;&gt;&lt;a href=&quot;#解决非Retina屏字体发虚问题&quot; class=&quot;headerlink&quot; title=&quot;解决非Retina屏字体发虚问题&quot;&gt;&lt;/a&gt;解决非Retina屏字体发虚问题&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;打开
-        
-      
+      &lt;h4 id=&quot;解决非Retina屏字体发虚问题&quot;&gt;&lt;a href=&quot;#解决非Retina屏字体发虚问题&quot; class=&quot;headerlink&quot; title=&quot;解决非Retina屏字体发虚问题&quot;&gt;&lt;/a&gt;解决非Retina屏字体发虚问题&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;打开 【终端】应用，输入下面命令，全局启用【次像素抗锯齿】渲染&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;设置字体【次像素抗锯齿】级别（微调样式）的命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;defaults -currentHost write -globalDomain AppleFontSmoothing -int 3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;还原命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;defaults write -g CGFontRenderingFontSmoothingDisabled -bool YES&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;defaults -currentHost delete -globalDomain AppleFontSmoothing&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -149,18 +152,21 @@
     <link href="https://www.tam.ink/2019/02/12/Mac-%E6%8C%82%E8%BD%BDEFI%E5%88%86%E5%8C%BA/"/>
     <id>https://www.tam.ink/2019/02/12/Mac-挂载EFI分区/</id>
     <published>2019-02-12T09:59:45.000Z</published>
-    <updated>2019-02-12T15:12:54.958Z</updated>
+    <updated>2019-02-15T14:12:33.012Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;&lt;h5 id=&quot;查看分区信息&quot;&gt;&lt;a href=&quot;#查看分区信息&quot; class=&quot;headerlink&quot; title=&quot;查看分区信息&quot;&gt;&lt;/a&gt;查看分区信息&lt;/h5&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
+      &lt;ul&gt;
+&lt;li&gt;&lt;h5 id=&quot;查看分区信息&quot;&gt;&lt;a href=&quot;#查看分区信息&quot; class=&quot;headerlink&quot; title=&quot;查看分区信息&quot;&gt;&lt;/a&gt;查看分区信息&lt;/h5&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;TSZs-MacBook-Pro:~ tsz$ diskutil list&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/dev/disk0 (internal):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;comment&quot;&gt;#:                       TYPE NAME                    SIZE       IDENTIFIER&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   0:      GUID_partition_scheme                         500.1 GB   disk0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   1:           Windows Recovery                         523.2 MB   disk0s1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   2:                        EFI NO NAME                 524.3 MB   disk0s2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   3:         Microsoft Reserved                         16.8 MB    disk0s3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   4:       Microsoft Basic Data                         274.9 GB   disk0s4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   5:                 Apple_APFS Container disk1         224.0 GB   disk0s5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/dev/disk1 (synthesized):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;comment&quot;&gt;#:                       TYPE NAME                    SIZE       IDENTIFIER&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   0:      APFS Container Scheme -                      +224.0 GB   disk1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                                 Physical Store disk0s5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   1:                APFS Volume MacOS                   68.9 GB    disk1s1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   2:                APFS Volume Preboot                 45.0 MB    disk1s2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   3:                APFS Volume Recovery                517.0 MB   disk1s3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   4:                APFS Volume VM                      1.1 GB     disk1s4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;确定efi分区为disk0的第2顺序分区，即 disk0s2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h5 id=&quot;挂载EFI分区&quot;&gt;&lt;a href=&quot;#挂载EFI分区&quot; class=&quot;headerlink&quot; title=&quot;挂载EFI分区&quot;&gt;&lt;/a&gt;挂载EFI分区&lt;/h5&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo diskutil mount /dev/disk0s2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h5 id=&quot;卸载EFI分区&quot;&gt;&lt;a href=&quot;#卸载EFI分区&quot; class=&quot;headerlink&quot; title=&quot;卸载EFI分区&quot;&gt;&lt;/a&gt;卸载EFI分区&lt;/h5&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo diskutil unmount /dev/disk0s2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
