@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.tam.ink/"/>
-  <updated>2019-03-04T15:03:50.438Z</updated>
+  <updated>2019-03-07T08:22:33.298Z</updated>
   <id>https://www.tam.ink/</id>
   
   <author>
@@ -21,11 +21,16 @@
     <link href="https://www.tam.ink/2019/02/15/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0Air-13IKB-Pro-%E9%BB%91%E8%8B%B9%E6%9E%9CCLOVER%E5%88%86%E4%BA%AB/"/>
     <id>https://www.tam.ink/2019/02/15/联想小新Air-13IKB-Pro-黑苹果CLOVER分享/</id>
     <published>2019-02-15T08:12:57.000Z</published>
-    <updated>2019-03-04T15:03:50.438Z</updated>
+    <updated>2019-03-07T08:22:33.298Z</updated>
     
     <summary type="html">
     
       &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;2019-03-07更新&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;更换Layout ID为15，修复静音键失效问题&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;2019-03-04更新&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;更换Layout ID为11，修复耳机杂音问题&lt;/li&gt;
