@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[部分联想笔记本bios进入debug模式]]></title>
+    <url>%2F2019%2F03%2F19%2F%E9%83%A8%E5%88%86%E8%81%94%E6%83%B3%E7%AC%94%E8%AE%B0%E6%9C%ACbios%E8%BF%9B%E5%85%A5debug%E6%A8%A1%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[笔记本关机 关机状态下，顺序按下以下按键 123456F1 Q A ZF2 W S XF3 E D CF4 R F VF5 T G BF6 Y H N 接着按开机+F2进入bios 测试可用机型：Lenovo Air 13IKB Pro]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+        <tag>联想小新</tag>
+        <tag>bios</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[联想小新Air 13IKB Pro 黑苹果CLOVER分享]]></title>
     <url>%2F2019%2F02%2F15%2F%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0Air-13IKB-Pro-%E9%BB%91%E8%8B%B9%E6%9E%9CCLOVER%E5%88%86%E4%BA%AB%2F</url>
     <content type="text"><![CDATA[2019-03-07更新 更换Layout ID为15，修复静音键失效问题 2019-03-04更新 更换Layout ID为11，修复耳机杂音问题 2019-02-23更新 完善hotpatch热补丁，使config.plist更简洁 修复PowerNap唤醒后不自动睡眠的问题 驱动读卡器（注意：必须手动推出内存卡才能执行拔出操作，否则会导致系统重启） 2019-02-15发布 使用hotpatch热补丁 除指纹、读卡器与独显（已屏蔽）外，一切功能正常 添加CPUFriendDataProvider.kext，完善CPU变频 使用VirtualSMC.kext以及其所有插件，抛弃FakeSMC.kext 注意：此CLOVER支持的网卡为DW1830，如网卡硬件不同，请自行更改驱动 下载地址： 1链接:https://pan.baidu.com/s/1SD26n-8WclF3yLSAPTI3ZQ 密码:mfyj]]></content>

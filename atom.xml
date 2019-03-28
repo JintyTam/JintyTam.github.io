@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.tam.ink/"/>
-  <updated>2019-03-07T08:22:33.298Z</updated>
+  <updated>2019-03-28T10:58:49.398Z</updated>
   <id>https://www.tam.ink/</id>
   
   <author>
@@ -17,11 +17,45 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>部分联想笔记本bios进入debug模式</title>
+    <link href="https://www.tam.ink/2019/03/19/%E9%83%A8%E5%88%86%E8%81%94%E6%83%B3%E7%AC%94%E8%AE%B0%E6%9C%ACbios%E8%BF%9B%E5%85%A5debug%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://www.tam.ink/2019/03/19/部分联想笔记本bios进入debug模式/</id>
+    <published>2019-03-19T12:35:10.000Z</published>
+    <updated>2019-03-28T10:58:49.398Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;笔记本关机&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;关机状态下，顺序按下以下按键&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="https://www.tam.ink/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Mac" scheme="https://www.tam.ink/tags/Mac/"/>
+    
+      <category term="联想小新" scheme="https://www.tam.ink/tags/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0/"/>
+    
+      <category term="bios" scheme="https://www.tam.ink/tags/bios/"/>
+    
+  </entry>
+  
+  <entry>
     <title>联想小新Air 13IKB Pro 黑苹果CLOVER分享</title>
     <link href="https://www.tam.ink/2019/02/15/%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0Air-13IKB-Pro-%E9%BB%91%E8%8B%B9%E6%9E%9CCLOVER%E5%88%86%E4%BA%AB/"/>
     <id>https://www.tam.ink/2019/02/15/联想小新Air-13IKB-Pro-黑苹果CLOVER分享/</id>
     <published>2019-02-15T08:12:57.000Z</published>
-    <updated>2019-03-07T08:22:33.298Z</updated>
+    <updated>2019-03-07T08:23:32.000Z</updated>
     
     <summary type="html">
     
@@ -75,7 +109,7 @@
     <link href="https://www.tam.ink/2019/02/14/%E9%BB%91%E8%8B%B9%E6%9E%9C-%E7%AC%94%E8%AE%B0%E6%9C%AC%E5%B1%8F%E8%94%BD%E7%8B%AC%E6%98%BE/"/>
     <id>https://www.tam.ink/2019/02/14/黑苹果-笔记本屏蔽独显/</id>
     <published>2019-02-14T13:14:02.000Z</published>
-    <updated>2019-02-16T14:28:25.761Z</updated>
+    <updated>2019-02-16T14:28:25.000Z</updated>
     
     <summary type="html">
     
@@ -117,7 +151,7 @@
     <link href="https://www.tam.ink/2019/02/12/Windows%E6%8C%82%E8%BD%BD%E5%B9%B6%E8%AE%BF%E9%97%AEefi%E5%88%86%E5%8C%BA/"/>
     <id>https://www.tam.ink/2019/02/12/Windows挂载并访问efi分区/</id>
     <published>2019-02-12T15:11:18.000Z</published>
-    <updated>2019-02-15T08:20:56.674Z</updated>
+    <updated>2019-02-15T08:20:56.000Z</updated>
     
     <summary type="html">
     
@@ -139,7 +173,7 @@
     <link href="https://www.tam.ink/2019/02/12/Mojave%E6%94%B9%E5%8F%98%E5%AD%97%E4%BD%93%E6%B8%B2%E6%9F%93%E6%96%B9%E5%BC%8F/"/>
     <id>https://www.tam.ink/2019/02/12/Mojave改变字体渲染方式/</id>
     <published>2019-02-12T15:05:30.000Z</published>
-    <updated>2019-02-15T14:12:03.721Z</updated>
+    <updated>2019-02-15T14:12:03.000Z</updated>
     
     <summary type="html">
     
@@ -171,7 +205,7 @@
     <link href="https://www.tam.ink/2019/02/12/Mac-%E6%8C%82%E8%BD%BDEFI%E5%88%86%E5%8C%BA/"/>
     <id>https://www.tam.ink/2019/02/12/Mac-挂载EFI分区/</id>
     <published>2019-02-12T09:59:45.000Z</published>
-    <updated>2019-02-15T14:12:33.012Z</updated>
+    <updated>2019-02-15T14:12:33.000Z</updated>
     
     <summary type="html">
     
@@ -205,7 +239,7 @@
     <link href="https://www.tam.ink/2019/02/11/%E9%BB%91%E8%8B%B9%E6%9E%9CCPU%E5%BC%80%E5%90%AFHWP%E5%AE%9E%E7%8E%B0%E5%8F%98%E9%A2%91/"/>
     <id>https://www.tam.ink/2019/02/11/黑苹果CPU开启HWP实现变频/</id>
     <published>2019-02-11T06:59:46.000Z</published>
-    <updated>2019-02-11T07:47:44.734Z</updated>
+    <updated>2019-02-11T07:47:44.000Z</updated>
     
     <summary type="html">
     
@@ -238,7 +272,7 @@
     <link href="https://www.tam.ink/2019/01/29/Mac%E4%B8%8Bhexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>https://www.tam.ink/2019/01/29/Mac下hexo-github搭建个人博客/</id>
     <published>2019-01-29T05:05:41.000Z</published>
-    <updated>2019-02-02T17:46:04.874Z</updated>
+    <updated>2019-02-02T17:46:04.000Z</updated>
     
     <summary type="html">
     
@@ -271,7 +305,7 @@
     <link href="https://www.tam.ink/2019/01/22/Windows%E5%92%8CMacOS-%E8%93%9D%E7%89%994-0%E4%BB%A5%E4%B8%8A%E9%BC%A0%E6%A0%87%E5%85%B1%E4%BA%AB/"/>
     <id>https://www.tam.ink/2019/01/22/Windows和MacOS-蓝牙4-0以上鼠标共享/</id>
     <published>2019-01-22T03:41:09.000Z</published>
-    <updated>2019-02-03T01:06:39.710Z</updated>
+    <updated>2019-02-03T01:06:39.000Z</updated>
     
     <summary type="html">
     
@@ -305,7 +339,7 @@
     <link href="https://www.tam.ink/2018/05/23/Cron%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
     <id>https://www.tam.ink/2018/05/23/Cron定时任务/</id>
     <published>2018-05-23T04:43:16.000Z</published>
-    <updated>2019-01-29T04:51:52.730Z</updated>
+    <updated>2019-01-29T04:51:52.000Z</updated>
     
     <summary type="html">
     
@@ -347,7 +381,7 @@
     <link href="https://www.tam.ink/2018/05/23/%E6%A0%91%E8%8E%93%E6%B4%BE40pin%E5%BC%95%E8%84%9A%E5%9B%BE/"/>
     <id>https://www.tam.ink/2018/05/23/树莓派40pin引脚图/</id>
     <published>2018-05-23T04:36:10.000Z</published>
-    <updated>2019-01-29T04:41:19.240Z</updated>
+    <updated>2019-01-29T04:41:19.000Z</updated>
     
     <summary type="html">
     
@@ -393,7 +427,7 @@
     <link href="https://www.tam.ink/2018/05/20/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
     <id>https://www.tam.ink/2018/05/20/树莓派折腾笔记/</id>
     <published>2018-05-20T04:20:13.000Z</published>
-    <updated>2019-01-29T04:31:20.390Z</updated>
+    <updated>2019-03-18T08:48:46.921Z</updated>
     
     <summary type="html">
     
@@ -424,7 +458,7 @@
     <link href="https://www.tam.ink/2018/05/18/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <id>https://www.tam.ink/2018/05/18/第一篇博客/</id>
     <published>2018-05-18T02:25:09.000Z</published>
-    <updated>2019-01-29T04:30:04.590Z</updated>
+    <updated>2019-03-18T08:56:36.819Z</updated>
     
     <summary type="html">
     
